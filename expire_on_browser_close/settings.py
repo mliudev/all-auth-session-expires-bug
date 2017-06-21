@@ -119,5 +119,9 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# Session
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 600
+
 # Auth templates
 LOGIN_REDIRECT_URL = '/'
