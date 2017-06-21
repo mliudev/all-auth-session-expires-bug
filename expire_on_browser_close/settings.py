@@ -143,3 +143,8 @@ SITE_ID = 1
 # django-allauth
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login'
 LOGIN_REDIRECT_URL = '/'
+
+
+# Session
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_COOKIE_AGE = 600
