@@ -60,7 +60,7 @@ ROOT_URLCONF = 'expire_on_browser_close.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['expire_on_browser_close/templates/'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -142,3 +142,4 @@ SITE_ID = 1
 
 # django-allauth
 ACCOUNT_LOGOUT_REDIRECT_URL = '/accounts/login'
+LOGIN_REDIRECT_URL = '/'
