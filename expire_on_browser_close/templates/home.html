@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block content %}
+<table>
+    <tr>
+        <td>
+            Your session id is: {{ session_id }}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            Session cookie expires on browser close: {{ session_expires }}
+        </td>
+    </tr>
+
+    {% if not session_expires %}
+    <tr>
+        <td>
+            Session expires: {{ session_expiry_date }}
+        </td>
+    </tr>
+    {% endif %}
+
+</table>
+{% endblock content %}

@@ -16,7 +16,10 @@ Including another URLconf
 from django.conf.urls import url, include
 from django.contrib import admin
 
+from expire_on_browser_close.views import HomeView
+
 urlpatterns = [
+    url('^$', HomeView.as_view(), name='home'),
     url('^', include('django.contrib.auth.urls')),
     url(r'^admin/', admin.site.urls),
 ]
