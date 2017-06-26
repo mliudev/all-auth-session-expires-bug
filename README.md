@@ -5,11 +5,17 @@ respected.
 
 # how to test
 
-First checkout `base-django` and follow the readme instructions there
-in order to verify the behavior of a base django installation with
-respect to session cookie handling.
+Quick setup:
+```
+python manage.py migrate
+python manage.py createsuperuser
 
-Then checkout `all-auth` and follow the readme instructions there to
-see that django-allauth ignores the `SESSION_EXPIRE_AT_BROWSER_CLOSE`
-setting.
+python manage.py runserver
+```
 
+Navigate to localhost:8000 and login with your created superuser.
+You should see the session key, whether the key expires on browser
+close, and when the expiration date is if it does.
+
+You can modify the `SESSION_EXPIRES_AT_BROWSER_CLOSE` setting in
+settings.py to verify that this setting is respected.
