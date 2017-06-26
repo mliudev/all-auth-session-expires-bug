@@ -12,3 +12,4 @@ respect to session cookie handling.
 Then checkout `all-auth` and follow the readme instructions there to
 see that django-allauth ignores the `SESSION_EXPIRE_AT_BROWSER_CLOSE`
 setting.
+
